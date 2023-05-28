@@ -22,3 +22,21 @@ let a = 2
 // a = a + 1
 a += 1 // * / 도 가능
 console.log(a)
+
+// 비교 연산자(comparison operator)
+
+const b = 1
+const c = 1
+
+console.log(b === c)
+console.log(b !== c)
+console.log(b <= c)
+console.log(b >= c)
+
+
+function isEqual(x, y) {
+  return x === y
+}
+
+console.log(isEqual(1, 1))
+console.log(isEqual(2, '2'))
