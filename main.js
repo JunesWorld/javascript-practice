@@ -72,6 +72,17 @@ console.log(g ? '참' : '거짓') // 참이면 : 앞부분 거짓이면 : 뒷부
 
 const h = getRandom()
 
+switch (h) {
+  case 0:
+    console.log('h is 0')
+    break
+  case 2:
+    console.log('h is 2')
+    break
+  default:
+    console.log('rest...')
+}
+
 if (h === 0 ) {
   console.log('h is 0')
 } else if (h ===2) {
