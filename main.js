@@ -106,3 +106,15 @@ for (let i = 0; i < 3; i += 1) {
   }
   ulEl.appendChild(li)
 }
+
+// 변수 유효범위(Variable Scope)
+// var(사용x), let, const
+// var = function level
+// let, const = block level = {}
+function scope() {
+  if (true) {
+    const j = 123
+    console.log(j)
+  }
+}
+scope()
