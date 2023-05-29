@@ -54,3 +54,15 @@ console.log(f)
 console.log('&&: ', d && e && f) // and
 console.log('||: ', d || e) // or : 하나만 true여도 true
 console.log('!: ', !a) // not 연산자
+
+// 삼항 연산자(ternary operator)
+
+const g = 1 < 2
+
+if (g) {
+  console.log('참')
+} else {
+  console.log('거짓')
+}
+
+console.log(g ? '참' : '거짓') // 참이면 : 앞부분 거짓이면 : 뒷부분
