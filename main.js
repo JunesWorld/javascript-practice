@@ -163,3 +163,22 @@ console.log('double: ', double(7))
 const doubleArrow = (p) => p * 2 // 매개변수 1개면 () 생략 가능
 // => ({name: 'June'}) / {} 객체데이터 사용할 때는 ()로 한번 감싸서 사용
 console.log('doubleArrow', doubleArrow(7))
+
+// 즉시실행함수
+// IIFE, Immediately-Invoked Function Expression
+
+// const a = 7
+// function double() {
+//   console.log(a * 2)
+// }
+// double();
+
+// // () 두번 사용 = 즉시실행함수 / 위 함수에 ; 붙여줘야한다.
+// (function () {
+//   console.log(a * 2)
+// })();
+
+// // 권장!
+// (function () {
+//   console.log(a * 2)
+// }());
