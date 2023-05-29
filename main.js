@@ -224,3 +224,20 @@ const h1El = document.querySelector('h1')
 h1El.addEventListener('click', () => {
   clearInterval(timer)
 })
+
+// 콜백(Callback)
+// 함수의 인수로 사용되는 함수
+
+// setTimeout(함수, 시간)
+
+function timeout(callback) {
+  setTimeout(() => {
+    console.log('JUNE!')
+    callback() // 실행 위치를 보장!
+  }, 3000)
+}
+// callback
+// timeout 함수를 하나의 인수로 사용 -> callback이라는 매개변수로 들어간다 -> 위 함수에서 실행 위치 보장
+timeout(() => {
+  console.log('Done!')
+})
