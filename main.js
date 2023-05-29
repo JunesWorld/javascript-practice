@@ -242,6 +242,7 @@ timeout(() => {
   console.log('Done!')
 })
 
+//-------------------------
 
 // 생성자 함수(prototype)
 
@@ -276,3 +277,51 @@ const neo = new User('Neo', 'Smith')
 console.log(june.getFullName())
 console.log(amy.getFullName())
 console.log(neo.getFullName())
+
+//-------------------------
+
+// // this
+// // 일반(Normal) 함수는 호출 위치에서 따라 this 정의!
+// // 화살표(Arrow) 함수는 자신이 선언된 함수 범위에서 this 정의!
+
+//----------예제 1-----------
+
+// function User(name) {
+//   this.name = name
+// }
+// User.prototype.normal = function () {
+//   console.log(this.name)
+// }
+// User.prototype.arrow = () => {
+//   console.log(this.name)
+// }
+
+// const june = new User('June')
+
+// june.normal() // June 출력
+// june.arrow() // Undefined 출력
+
+//----------예제 2-----------
+
+// // undefined
+// const timer = {
+//   name: 'June!!',
+//   timeout: function () {
+//     setTimeout(function () {
+//       console.log(this.name)
+//     }, 2000)
+//   }
+// }
+// timer.timeout()
+
+// // June!!
+// // setTimout & setInterval timer 함수 사용시 화살표 함수 사용!!
+// const timer = {
+//   name: 'June!!',
+//   timeout: function () {
+//     setTimeout(() => {
+//       console.log(this.name) // this = timer
+//     }, 2000)
+//   }
+// }
+// timer.timeout()
