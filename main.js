@@ -118,3 +118,22 @@ function scope() {
   }
 }
 scope()
+
+// 형 변환 (Type conversion)
+
+// Truthy(참 같은 값)
+// true, {}, [], 1, 2, 'false', -12, '3.14' ...
+
+// Falsy(거짓 같은 값)
+// false, '', null, undefined, 0, -0, NaN(Not a Number)
+
+if ('false') {
+  console.log(123)
+}
+
+const k = 1
+const l = '1'
+
+// ==(동등 연산자) : 되도록 사용하지 x / 결과 : true
+// 일치 연산자(===) 사용
+console.log(k == l) 
