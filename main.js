@@ -241,3 +241,38 @@ function timeout(callback) {
 timeout(() => {
   console.log('Done!')
 })
+
+
+// 생성자 함수(prototype)
+
+// const june = {
+//   firstName: 'June',
+//   lastName: 'Lee',
+//   getFullName: function () {
+//     return `${this.firstName} ${this.lastName}`
+//   }
+// }
+// console.log(june.getFullName())
+
+// Class
+// new를 사용하는 생성자 함수는 파스칼 표기법 사용
+function User(first, last) {
+  this.firstName = first
+  this.lastName = last
+  // this.getFullName = function () {
+  //   return `${this.firstName} ${this.lastName}`
+  // }
+}
+// prototype 속성으로 효율적인 메모리 관리
+User.prototype.getFullName = function () {
+  return `${this.firstName} ${this.lastName}`
+}
+
+// june, amy, neo = instance
+const june = new User('June', 'Lee')
+const amy = new User('Amy', 'Clarke')
+const neo = new User('Neo', 'Smith')
+
+console.log(june.getFullName())
+console.log(amy.getFullName())
+console.log(neo.getFullName())
