@@ -151,3 +151,15 @@ function sum(m, n) {
 const o = sum(1, 3)
 console.log(sum(1, 3)) // 반복 X
 console.log(o) // 반복 사용 시
+
+// 화살표 함수
+// () => {} vs function () {}
+
+const double = function (p) {
+  return p * 2
+}
+console.log('double: ', double(7))
+
+const doubleArrow = (p) => p * 2 // 매개변수 1개면 () 생략 가능
+// => ({name: 'June'}) / {} 객체데이터 사용할 때는 ()로 한번 감싸서 사용
+console.log('doubleArrow', doubleArrow(7))
