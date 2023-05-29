@@ -1,4 +1,5 @@
 import getType from './getType'
+import getRandom from './getRandom'
 
 console.log(typeof 'Hello world!')
 console.log(typeof 123)
@@ -66,3 +67,15 @@ if (g) {
 }
 
 console.log(g ? '참' : '거짓') // 참이면 : 앞부분 거짓이면 : 뒷부분
+
+// 조건문(If Statement)
+
+const h = getRandom()
+
+if (h === 0 ) {
+  console.log('h is 0')
+} else if (h ===2) {
+  console.log('h is 2')
+} else {
+  console.log('rest...')
+}
