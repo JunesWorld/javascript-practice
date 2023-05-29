@@ -137,3 +137,17 @@ const l = '1'
 // ==(동등 연산자) : 되도록 사용하지 x / 결과 : true
 // 일치 연산자(===) 사용
 console.log(k == l) 
+
+// 함수 복습
+// m,n  = 매개변수
+// 1, 3, 4, 12 = 인수
+function sum(m, n) {
+  // console.log(m + n)
+  return m + n
+  // console.log(arguments)
+  // return arguments[0] + arguments[1]
+}
+
+const o = sum(1, 3)
+console.log(sum(1, 3)) // 반복 X
+console.log(o) // 반복 사용 시
