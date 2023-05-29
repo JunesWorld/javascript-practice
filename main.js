@@ -40,3 +40,17 @@ function isEqual(x, y) {
 
 console.log(isEqual(1, 1))
 console.log(isEqual(2, '2'))
+
+// 논리 연산자(logical operator)
+
+const d = 1 === 1
+const e = 'AB' === 'AB'
+const f = true
+
+console.log(d)
+console.log(e)
+console.log(f)
+
+console.log('&&: ', d && e && f) // and
+console.log('||: ', d || e) // or : 하나만 true여도 true
+console.log('!: ', !a) // not 연산자
