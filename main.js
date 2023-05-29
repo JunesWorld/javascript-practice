@@ -377,3 +377,38 @@ kevin.arrow() // undifined
 // console.log(june)
 // console.log(amy.getFullName())
 // console.log(neo.getFullName())
+
+//-------------------------
+
+// // 상속(확장)
+
+// class Vehicle {
+//   constructor(vehicleName, wheel) {
+//     this.vehicleName = vehicleName
+//     this.wheel = wheel
+//   }
+// }
+// const myVehicle = new Vehicle('운송수단', 2)
+// console.log(myVehicle)
+
+// class Bicycle extends Vehicle {
+//   constructor(vehicleName, wheel) {
+//     super(vehicleName, wheel)
+//   }
+// }
+// const myBicycle = new Bicycle('삼천리', 2)
+// const daughtersBicycle = new Bicycle('세발', 3)
+// console.log(myBicycle)
+// console.log(daughtersBicycle)
+
+// class Car extends Vehicle {
+//   constructor(vehicleName, wheel, license) {
+//     super(vehicleName, wheel)
+//     this.license = license
+//   }
+// }
+// const myCar = new Car('Benz', 4, true)
+// const daughtersCar = new Car('Porche', 4, false)
+
+// console.log(myCar)
+// console.log(daughtersCar)
