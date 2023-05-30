@@ -412,3 +412,6 @@ const daughtersCar = new Car('Porche', 4, false)
 
 console.log(myCar)
 console.log(daughtersCar)
+
+
+// --------- Javascript Level Up ---------
